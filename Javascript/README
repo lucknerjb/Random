@@ -8,3 +8,28 @@ These are collections of javascript snippets that I use with many of my projects
 
 3) browser-detect
 	Detect the user's browser. Allows to know if certain functions / tools are available and potentially render elements differently
+
+4) interact-with-iframe
+	Ever wanted to manipulate the elements of a page inside an iframe? Well it's possible! Load your iframe as usual and create an object referencing this iframe.
+	
+	Ex:
+		$iframe = document.getElementById('myiframe');
+		$iframe.contents().find( 'element to find - class or ID name' ).hide().show();
+
+5) APP.js
+	This file contains a master applications object that I have started using for a project I had. I stripped out all the proprietary information / references in this file and 
+	left the barebones code.
+
+	It has functions to get the viewport of the user's screen - great if you are trying to determine how big your modal window can be, etc...
+	I left some logo update functions in there simply because they can be applied to various settings
+	There is an alphanumeric input validator
+	There is a message generator function. This function uses the language setting in the configuration file. A simple messages object would hold the english and french versions 
+	of common messages - example "Welcome!", "Please wait...", etc... This was an attempt at adding language support to an application that consisted mostly of javascript and 
+	JQuery code...hence reducing the backend calls via ajax.
+
+	etc...
+
+	Usage: 
+	$APP.validate_input( $( '#input_field' ).val() );
+	$APP.generateMessage( $app_messages['say_hello'] );	//Output: "Hello World!"
+	$APP.find( '#my-element' );	//Same as $( '#my-element' ) except that this find method only  finds elements within an iframe, defined by $ide_iframe.

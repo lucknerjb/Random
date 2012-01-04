@@ -1,0 +1,10 @@
+These are collections of javascript snippets that I use with many of my projects. Feel free to use them as well!
+
+1) trim-function
+	This function trims on both the left side and the right side
+
+2) config-with-environment-detection
+	Detect the environment and set config vars specific to that environment
+
+3) browser-detect
+	Detect the user's browser. Allows to know if certain functions / tools are available and potentially render elements differently

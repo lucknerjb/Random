@@ -1,0 +1,9 @@
+Create-VHost is a perl script used to create virtual hosts on a server. Instead of having to manually add subdomains and virtual hosts, the script can be excuted via PHP's EXECUTE function.
+
+Example:
+	exec("perl $ROOT/requires/create_domain_vhost.pl --domain $domain --file $ROOT/includes/templates/vhost_template.conf --domains_dir domains")
+
+The parameters:
+	--domain : The domain needed to be created
+	--file	: The Virtual Host template file
+	--domains_dir	: The directory where the domains reside

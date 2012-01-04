@@ -1,0 +1,5 @@
+Create-VHost is a PHP script used to create virtual hosts on a server. Instead of having to manually add subdomains and virtual hosts, the script can be excuted via PHP's EXECUTE function.
+
+In the file is the barebones code needed to create the virtual host. This code was originally used as part of a function in a CakePHP Component - hence the references to Configure::read for certain options.
+
+Feel free to customize this code as needed and implement in a function or class :-)
